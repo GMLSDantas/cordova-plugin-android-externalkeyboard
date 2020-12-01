@@ -1,4 +1,4 @@
-package com.quatronic.plugin;
+package com.GMLSDantas.plugin;
 
 import android.content.Intent;
 import android.content.Context;
@@ -16,7 +16,7 @@ import org.json.JSONObject;
 	https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis/
 	https://stackoverflow.com/questions/40375555/start-android-activity-from-cordova-plugin
  */
-public class ZebraKeyboard extends CordovaPlugin {
+public class ExternalKeyboard extends CordovaPlugin {
 
 	private static final String ACTION = "com.symbol.ekb.api.ACTION_UPDATE";
 	private static final String PACKAGE = "com.symbol.mxmf.csp.enterprisekeyboard";
