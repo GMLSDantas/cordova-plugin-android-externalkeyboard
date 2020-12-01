@@ -20,12 +20,12 @@ import org.json.JSONObject;
 public class ExternalKeyboard extends CordovaPlugin {
         
 	@Override
-	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {	
-		this.isKeyboardPlugged(layoutGroupName,layout,callbackContext,context);
+	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+		this.isKeyboardPlugged(callbackContext,context);
 		return true;
 	}
 	
-	private void isKeyboardPlugged(String layoutGroupName, String layout,CallbackContext callbackContext,Context context) { 
+	private void isKeyboardPlugged(CallbackContext callbackContext,Context context) { 
 		callbackContext.success();
 	}
 }
