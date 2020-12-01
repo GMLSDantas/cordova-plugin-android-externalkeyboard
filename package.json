@@ -1,16 +1,16 @@
 {
-  "name": "zebrakeyboard",
+  "name": "externalkeyboard",
   "version": "0.0.1",
   "description": "An Android Cordova plugin that allows you select a specific custom Zebra Keyboard Template.",
   "cordova": {
-    "id": "zebrakeyboard",
+    "id": "externalkeyboard",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/quatronic/zebrakeyboard.git"
+    "url": "git+https://github.com/GMLSDantas/externalkeyboard.git"
   },
   "keywords": [
     "Zebra",
@@ -24,10 +24,10 @@
       "version": ">=7.1.0"
     }
   ],
-  "author": "Frank Grooten <frank.grooten@quatronic.nl>",
+  "author": "Guilherme Dantas <dantas.work@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/quatronic/zebrakeyboard/issues"
+    "url": "https://github.com/GMLSDantas/externalkeyboard/issues"
   },
-  "homepage": "https://github.com/quatronic/zebrakeyboard/"
+  "homepage": "https://github.com/GMLSDantas/externalkeyboard/"
 }
