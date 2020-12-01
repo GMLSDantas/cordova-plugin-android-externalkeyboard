@@ -15,15 +15,17 @@ import org.json.JSONObject;
 	https://www.javatpoint.com/android-intent-tutorial
 	https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis/
 	https://stackoverflow.com/questions/40375555/start-android-activity-from-cordova-plugin
+	38f60f3  - works
  */
 public class ExternalKeyboard extends CordovaPlugin {
         
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {	
-			return true;
+		this.selectLayout(layoutGroupName,layout,callbackContext,context);
+		return true;
 	}
 	
-	private void selectLayout(String layoutGroupName, String layout,CallbackContext callbackContext,Context context) { 
-				callbackContext.success();
+	private void isKeyboardPlugged(String layoutGroupName, String layout,CallbackContext callbackContext,Context context) { 
+		callbackContext.success();
 	}
 }
