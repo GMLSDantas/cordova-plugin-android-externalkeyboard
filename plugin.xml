@@ -2,30 +2,30 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         id="zebrakeyboard" version="0.0.1">
-    <name>ZebraKeyboard</name>
+    <name>ExternalKeyboard</name>
 
     <description>An Android Cordova plugin that allows you select a specific custom Zebra Keyboard Template.</description>
     <license>MIT</license>
 
     <keywords>cordova,android,zebra,keyboard</keywords>
-    <repo>https://github.com/quatronic/zebrakeyboard</repo>
-    <issue>https://github.com/quatronic/zebrakeyboard/issues</issue>
+    <repo>https://github.com/GMLSDantas/externalkeyboard</repo>
+    <issue>https://github.com/GMLSDantas/externalkeyboard/issues</issue>
   
     <engines>
         <engine name="cordova" version=">=7.1.0"/>
     </engines>
   
-    <js-module src="www/zebrakeyboard.js" name="zebraKeyboard">
-        <clobbers target="window.plugins.zebraKeyboard" />
+    <js-module src="www/externalkeyboard.js" name="externalKeyboard">
+        <clobbers target="window.plugins.externalKeyboard" />
     </js-module>
 	
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="ZebraKeyboard">
-                <param name="android-package" value="com.quatronic.plugin.ZebraKeyboard"/>
+            <feature name="ExternalKeyboard">
+                <param name="android-package" value="com.GMLSDantas.plugin.ExternalKeyboard"/>
             </feature>
         </config-file>
 
-        <source-file src="src/android/com/quatronic/plugin/ZebraKeyboard.java" target-dir="src/com/quatronic/plugin" />
+        <source-file src="src/android/com/GMLSDantas/plugin/ExternalKeyboard.java" target-dir="src/com/GMLSDantas/plugin" />
     </platform>
 </plugin>
