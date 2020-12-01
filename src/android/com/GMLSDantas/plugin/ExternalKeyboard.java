@@ -2,6 +2,7 @@ package com.GMLSDantas.plugin;
 
 import android.content.Intent;
 import android.content.Context;
+import android.content.res;
 // Cordova-required packages
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -16,11 +17,13 @@ import org.json.JSONObject;
 	https://techdocs.zebra.com/enterprise-keyboard/latest/guide/apis/
 	https://stackoverflow.com/questions/40375555/start-android-activity-from-cordova-plugin
 	38f60f3  - works
+	ad2dee4  - works
  */
 public class ExternalKeyboard extends CordovaPlugin {
         
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+		Configuration config = getResources().getConfiguration();
 		return true;
 	}
 }
