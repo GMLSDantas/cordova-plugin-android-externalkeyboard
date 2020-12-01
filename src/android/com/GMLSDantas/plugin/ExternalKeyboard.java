@@ -21,7 +21,7 @@ public class ExternalKeyboard extends CordovaPlugin {
         
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		this.isKeyboardPlugged(callbackContext,context);
+		isKeyboardPlugged(callbackContext,context);
 		return true;
 	}
 	
