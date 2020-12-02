@@ -16,7 +16,26 @@ public class ExternalKeyboard extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-     
-            Configuration config = getResources().getConfiguration();
+           
+            try {
+			 
+             GetIsKeyboardPlugged(callbackContext,context)
+		  } catch (JSONException e) {
+			callbackContext.error("Error encountered: " + e.getMessage());
+			return false;
+		  } 
+        
     }
+    
+    private void GetIsKeyboardPlugged(CallbackContext callbackContext) {
+            Context context = cordova.getActivity().getApplicationContext();
+            Configuration config = context.getResources().getConfiguration();
+            int keyboard = config.keyboard;
+        if (keyboard != Configuration.KEYBOARD_NOKEYS) {
+                Log.d("WT6000_keypadapp","HARDWARE KEYBOARD: CONNECTED");
+            } else {
+                Log.d("WT6000_keypadapp","HARDWARE KEYBOARD: NOT CONNECTED"); 
+            }
+			callbackContext.success();
+	}
 }
