@@ -2,7 +2,6 @@ package com.GMLSDantas.plugin;
 
 import android.content.Intent;
 import android.content.Context;
-import android.content.res;
 // Cordova-required packages
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -23,7 +22,6 @@ public class ExternalKeyboard extends CordovaPlugin {
         
 	@Override
 	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		Configuration config = getResources().getConfiguration();
 		return true;
 	}
 }
