@@ -21,7 +21,16 @@ import org.json.JSONObject;
 public class ExternalKeyboard extends CordovaPlugin {
         
 	@Override
-	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-		return true;
+	public int execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+		
+		int keyboard = getResources().getConfiguration().keyboard;
+		if (keyboard != Configuration.KEYBOARD_NOKEYS) {
+		Log.d("WT6000_keypadapp","HARDWARE KEYBOARD: CONNECTED");
+		  } else {
+		Log.d("WT6000_keypadapp","HARDWARE KEYBOARD: NOT CONNECTED"); 
+		}
+		
+		return keyboard;
+	
 	}
 }
