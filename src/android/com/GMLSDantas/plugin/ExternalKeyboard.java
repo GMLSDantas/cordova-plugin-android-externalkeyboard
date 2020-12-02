@@ -24,7 +24,6 @@ public class ExternalKeyboard extends CordovaPlugin {
             } else {
 		return false;
             }
-	    callbackContext.success();
 	    return true;
             
 	}
