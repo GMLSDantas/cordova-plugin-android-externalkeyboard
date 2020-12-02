@@ -19,12 +19,13 @@ public class ExternalKeyboard extends CordovaPlugin {
             Context context = cordova.getActivity().getApplicationContext();
             Configuration config = context.getResources().getConfiguration();
             int keyboard = config.keyboard;
+
         if (keyboard != Configuration.KEYBOARD_NOKEYS) {
-		return true;
+		        return true;
             } else {
-		return false;
+		        return false;
             }
-	    return true;
+	   
             
 	}
 
