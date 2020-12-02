@@ -2,7 +2,7 @@ package com.GMLSDantas.plugin;
 
 import android.content.Intent;
 import android.content.Context;
-import android.content.res;
+import android.content.res.Configuration;
 // Cordova-required packages
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
