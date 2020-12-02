@@ -24,7 +24,8 @@ public class ExternalKeyboard extends CordovaPlugin {
             } else {
                 Log.d("WT6000_keypadapp","HARDWARE KEYBOARD: NOT CONNECTED"); 
             }
-			callbackContext.success();
+	    callbackContext.success();
+            return true;
 	}
-	return true;
+
 }
