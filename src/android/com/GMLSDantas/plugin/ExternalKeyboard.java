@@ -5,6 +5,7 @@ import android.content.Context;
 // Cordova-required packages
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
+import android.content.res.Resources
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
