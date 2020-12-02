@@ -19,7 +19,7 @@ public class ExternalKeyboard extends CordovaPlugin {
            
             try {
 			 
-             GetIsKeyboardPlugged(callbackContext,context)
+             GetIsKeyboardPlugged(callbackContext,context);
 		     return true;
 		  } catch (JSONException e) {
 			callbackContext.error("Error encountered: " + e.getMessage());
