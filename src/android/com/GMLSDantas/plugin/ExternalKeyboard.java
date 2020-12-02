@@ -16,8 +16,8 @@ public class ExternalKeyboard extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        Configuration configuration = getResouces().getConfiguration();
-        int keyboard = configuration.keybord;
+        Context context = cordova.getActivity().getApplicationContext();
+        Configuration config = getResources().getConfiguration();
         return true;
     }
 }
