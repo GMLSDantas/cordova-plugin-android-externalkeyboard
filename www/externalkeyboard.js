@@ -3,11 +3,8 @@ function externalKeyboard() {}
 
 // The function that passes work along to native shells
 // layoutGroupName is a string (default: "Vanboxtel_Null_Keyboard", layout is a string (default: "Null_Keyboard")
-externalKeyboard.prototype.selectLayout = function(successCallback, errorCallback,layoutGroupName,layout) {
-  var options = {};
-  options.layoutGroupName = String(layoutGroupName);
-  options.layout = String(layout);
-  cordova.exec(successCallback, errorCallback, 'ExternalKeyboard', 'selectLayout', [options]);
+externalKeyboard.prototype = function(successCallback, errorCallback) {
+  cordova.exec(successCallback, errorCallback);
 }
 
 // Installation constructor that binds ZebraKeyboardPlugin to window
