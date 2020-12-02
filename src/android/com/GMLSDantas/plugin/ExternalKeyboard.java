@@ -2,6 +2,7 @@ package com.GMLSDantas.plugin;
 
 import android.content.Intent;
 import android.content.Context;
+import android.content.res;
 // Cordova-required packages
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
@@ -22,16 +23,10 @@ import org.json.JSONObject;
 public class ExternalKeyboard extends CordovaPlugin {
         
 	@Override
-	public int execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
+
 		
-		int keyboard = getResources().getConfiguration().keyboard;
-		if (keyboard != Configuration.KEYBOARD_NOKEYS) {
-		Log.d("WT6000_keypadapp","HARDWARE KEYBOARD: CONNECTED");
-		  } else {
-		Log.d("WT6000_keypadapp","HARDWARE KEYBOARD: NOT CONNECTED"); 
-		}
-		
-		return keyboard;
+		return true;
 	
 	}
 }
