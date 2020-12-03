@@ -13,23 +13,28 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 //e070f3a - working - 3-12-2020 - 10:22 (before).
-//89d3da0 - Working
 
 public class ExternalKeyboard extends CordovaPlugin {
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         Context context = cordova.getActivity().getApplicationContext();
+        this.isKeyboardPlugged(callbackContext,context);
+        return true;
+
+    }
+
+
+    private void isKeyboardPlugged(CallbackContext callbackContext,Context context){
+        
         Configuration config = context.getResources().getConfiguration();
         int keyboard = config.keyboard;
         if (keyboard != Configuration.KEYBOARD_NOKEYS) {
-            callbackContext.success();
-            return true;
+            callbackContext.success('t');
         } else {
-            PluginResult pluginResult = new PluginResult(PluginResult.Status.OK);
-            callbackContext.error("No keyboard connected");
-            return false;
+            callbackContext.success('f');
         }
-        return true;
+
     }
+
 }
