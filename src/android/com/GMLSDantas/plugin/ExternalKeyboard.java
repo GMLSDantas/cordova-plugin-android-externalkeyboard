@@ -24,16 +24,16 @@ public class ExternalKeyboard extends CordovaPlugin {
 
 
 
-        if (callbackContext.success) then {
+if (callbackContext.success) {
             return true;
         }
 
-
+ 
 
         if (callbackContext.failure)
-
+    
             return false
-    }
+        }
 
 
 
