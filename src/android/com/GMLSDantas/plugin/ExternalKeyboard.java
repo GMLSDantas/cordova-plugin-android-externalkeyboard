@@ -12,6 +12,8 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+//e070f3a - working - 3-12-2020 - 10:22 (before).
+
 public class ExternalKeyboard extends CordovaPlugin {
 
     @Override
