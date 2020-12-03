@@ -15,7 +15,7 @@ import org.json.JSONObject;
 public class ExternalKeyboard extends CordovaPlugin {
 
     @Override
-    public boolean execute(CallbackContext callbackContext) throws JSONException {
+    public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
             
 	   return isKeyboardPlugged();
             
