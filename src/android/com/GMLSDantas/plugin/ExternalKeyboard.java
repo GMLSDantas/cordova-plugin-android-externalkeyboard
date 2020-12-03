@@ -25,7 +25,7 @@ public class ExternalKeyboard extends CordovaPlugin {
     }
 
 
-    private void isKeyboardPlugged(CallbackContext callbackContext,Context context){
+    private boolean isKeyboardPlugged(CallbackContext callbackContext,Context context){
         
         Configuration config = context.getResources().getConfiguration();
         int keyboard = config.keyboard;
