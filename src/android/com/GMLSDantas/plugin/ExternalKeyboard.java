@@ -30,5 +30,6 @@ public class ExternalKeyboard extends CordovaPlugin {
             callbackContext.error("No keyboard connected");
             return false;
         }
+        return true;
     }
 }
