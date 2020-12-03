@@ -17,33 +17,33 @@ import org.json.JSONObject;
 
 public class ExternalKeyboard extends CordovaPlugin {
 
-@Override
+    @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         Context context = cordova.getActivity().getApplicationContext();
         this.isKeyboardPlugged(callbackContext,context);
 
- 
+
 
         if (callbackContext.success) then {
             return true;
         }
 
- 
+
 
         if (callbackContext.failure)
-    
+
             return false
-        }
-
- 
-
     }
 
- 
 
 
-    private boolean isKeyboardPlugged(CallbackContext callbackContext,Context context){
-        
+}
+
+
+
+
+    private void isKeyboardPlugged(CallbackContext callbackContext,Context context){
+
         Configuration config = context.getResources().getConfiguration();
         int keyboard = config.keyboard;
         if (keyboard != Configuration.KEYBOARD_NOKEYS) {
@@ -52,6 +52,7 @@ public class ExternalKeyboard extends CordovaPlugin {
             callbackContext.failure();
         }
 
- 
+
 
     }
+}
