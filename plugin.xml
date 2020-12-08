@@ -4,7 +4,7 @@
         id="zebrakeyboard" version="0.0.1">
     <name>ExternalKeyboard</name>
 
-    <description>Plugin used to verify if a physical keyboard is connected to the device.</description>
+    <description>An Android Cordova plugin identifies if an external physical keyboard is connected to the device.</description>
     <license>MIT</license>
 
     <keywords>cordova,android,zebra,keyboard</keywords>
