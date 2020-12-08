@@ -1,7 +1,7 @@
 {
   "name": "externalkeyboard",
   "version": "0.0.1",
-  "description": "An Android Cordova plugin that allows you select a specific custom Zebra Keyboard Template.",
+  "description": "An Android Cordova plugin identifies if an external physical keyboard is connected to the device.",
   "cordova": {
     "id": "externalkeyboard",
     "platforms": [
