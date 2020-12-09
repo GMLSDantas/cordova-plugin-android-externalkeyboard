@@ -8,8 +8,8 @@
     <license>MIT</license>
 
     <keywords>cordova,android,zebra,keyboard</keywords>
-    <repo>https://github.com/GMLSDantas/externalkeyboard</repo>
-    <issue>https://github.com/GMLSDantas/externalkeyboard/issues</issue>
+    <repo>https://github.com/GMLSDantas/cordova-plugin-android-externalkeyboard</repo>
+    <issue>https://github.com/GMLSDantas/cordova-plugin-android-externalkeyboard/issues</issue>
   
     <engines>
         <engine name="cordova" version=">=7.1.0"/>
