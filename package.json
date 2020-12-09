@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GMLSDantas/externalkeyboard.git"
+    "url": "git+https://github.com/GMLSDantas/cordova-plugin-android-externalkeyboard.git"
   },
   "keywords": [
     "Zebra",
@@ -27,7 +27,7 @@
   "author": "Guilherme Dantas <dantas.work@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/GMLSDantas/externalkeyboard/issues"
+    "url": "https://github.com/GMLSDantas/cordova-plugin-android-externalkeyboard/issues"
   },
-  "homepage": "https://github.com/GMLSDantas/externalkeyboard/"
+  "homepage": "https://github.com/GMLSDantas/cordova-plugin-android-externalkeyboard/"
 }
